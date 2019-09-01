@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#8B1E3F</color>
+    <color name="colorPrimaryDark">#8B1E3F</color>
+    <color name="colorAccent">#DB4C40</color>
+    <!-- esquema de cores da aplicação -->
+    <color name="ruby">#8B1E3F</color>
+    <color name="darkPurple">#3C153B</color>
+    <color name="darkSeaGreen">#89BD9E</color>
+    <color name="paleGold">#F0C987</color>
+    <color name="carminePink">#DB4C40</color>
+    <!-- esquema de cores de texto -->
+    <color name="darkText1">#454545</color>
+    <color name="darkText2">#959595</color>
+    <!-- tons de cinza principais -->
+    <color name="grayScale1">#454545</color>
+    <color name="grayScale2">#858585</color>
+    <color name="grayScale3">#B5B5B5</color>
+    <color name="grayScale4">#CECECE</color>
+    <color name="grayScale5">#FEFEFE</color>
 </resources>
