@@ -3,11 +3,7 @@ package com.lucas.izidorio.conversor.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.core.text.htmlEncode
-import com.google.gson.Gson
 import com.lucas.izidorio.conversor.R
-import com.lucas.izidorio.conversor.model.retrofit.Conversion
 import com.lucas.izidorio.conversor.presenter.LoginActivityPresenter
 import kotlinx.android.synthetic.main.activity_login.*
 

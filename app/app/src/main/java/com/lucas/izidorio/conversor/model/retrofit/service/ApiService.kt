@@ -1,6 +1,6 @@
 package com.lucas.izidorio.conversor.model.retrofit.service
 
-import com.lucas.izidorio.conversor.model.retrofit.Conversion
+import com.lucas.izidorio.conversor.model.retrofit.serialization.Conversion
 import io.reactivex.Observable
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

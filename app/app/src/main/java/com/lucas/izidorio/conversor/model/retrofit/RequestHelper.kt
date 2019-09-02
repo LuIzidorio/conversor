@@ -2,6 +2,7 @@ package com.lucas.izidorio.conversor.model.retrofit
 
 import android.util.Log
 import com.lucas.izidorio.conversor.model.retrofit.provider.ServiceProvider
+import com.lucas.izidorio.conversor.model.retrofit.serialization.Conversion
 import com.lucas.izidorio.conversor.model.retrofit.service.ApiService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

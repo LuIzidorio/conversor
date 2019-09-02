@@ -11,4 +11,5 @@
     <string name="newCurrencyHint">Moeda Desejada</string>
     <string name="oldCurrencyInputHint">Valor</string>
     <string name="oldCurrencyHint">Moeda de Origem</string>
+    <string name="historyButtonText">Histórico</string>
 </resources>

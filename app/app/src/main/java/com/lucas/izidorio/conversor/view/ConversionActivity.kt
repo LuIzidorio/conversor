@@ -1,6 +1,7 @@
 package com.lucas.izidorio.conversor.view
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
@@ -32,7 +33,11 @@ class ConversionActivity : AppCompatActivity(), ConversionActivityPresenter.View
 
         convertButton.setOnClickListener {
             presenter?.hideKeyboard(this, rootView)
-            presenter?.convert()
+            presenter?.convert(this)
+        }
+
+        historyButton.setOnClickListener {
+            presenter?.showHistory(this)
         }
     }
 
@@ -50,5 +55,9 @@ class ConversionActivity : AppCompatActivity(), ConversionActivityPresenter.View
 
     override fun setNewCurrencyValue(newValue: String) {
         newCurrencyInput.setText(newValue)
+    }
+
+    override fun startNextActivity(i: Intent) {
+        this.startActivity(i)
     }
 }

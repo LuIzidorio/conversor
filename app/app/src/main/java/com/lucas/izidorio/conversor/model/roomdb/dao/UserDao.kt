@@ -1,6 +1,7 @@
-package com.lucas.izidorio.conversor.model.roomdb
+package com.lucas.izidorio.conversor.model.roomdb.dao
 
 import androidx.room.*
+import com.lucas.izidorio.conversor.model.roomdb.entities.User
 
 @Dao
 interface UserDao {

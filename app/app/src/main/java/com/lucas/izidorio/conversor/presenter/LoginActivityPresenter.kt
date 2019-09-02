@@ -3,14 +3,8 @@ package com.lucas.izidorio.conversor.presenter
 import android.app.Activity
 import android.content.Intent
 import android.util.Log
-import com.lucas.izidorio.conversor.model.retrofit.provider.ServiceProvider
-import com.lucas.izidorio.conversor.model.retrofit.service.ApiService
-import com.lucas.izidorio.conversor.model.roomdb.CurrentUser
-import com.lucas.izidorio.conversor.model.roomdb.User
 import com.lucas.izidorio.conversor.view.ConversionActivity
-import com.lucas.izidorio.conversor.view.LoginActivity
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import com.lucas.izidorio.conversor.view.HistoryActivity
 
 class LoginActivityPresenter(private val view: View) {
 
@@ -22,17 +16,26 @@ class LoginActivityPresenter(private val view: View) {
 
     fun login(type: LoginType, source: Activity) {
         val intent = Intent(source, ConversionActivity::class.java)
+            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            .addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+
         var auth = false
+        
         when (type) {
             LoginType.NORMAL -> {
                 val user = view.getUserFieldValue()
                 val password = view.getPasswordFieldValue()
 
+                // Autenticação no banco
+                Log.i(tag, "$user | $password")
+
                 auth = true
             }
-            LoginType.FACEBOOK -> { }
-            LoginType.TWITTER -> { }
-            LoginType.GOOGLE -> { }
+            LoginType.FACEBOOK -> { Log.e(tag, "Login não implementado") }
+            LoginType.TWITTER -> { Log.e(tag, "Login não implementado") }
+            LoginType.GOOGLE -> { Log.e(tag, "Login não implementado") }
         }
 
         if (auth) view.startNextActivity(intent)

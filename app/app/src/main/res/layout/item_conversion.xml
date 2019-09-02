@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_margin="10dp"
+              android:layout_width="match_parent"
+              app:cardBackgroundColor="@color/ruby"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Moeda de Origem"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/grayScale5" />
+                <TextView
+                        android:id="@+id/base"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="USD"
+                        android:gravity="center"
+                        android:textColor="@color/grayScale5" />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Moeda Desejada"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/grayScale5" />
+                <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="BRL"
+                        android:gravity="center"
+                        android:textColor="@color/grayScale5" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayScale4" />
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Valor de Referência"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/grayScale5" />
+            <TextView
+                    android:id="@+id/rateValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="1.0 USD = 4.16 BRL"
+                    android:gravity="center"
+                    android:textColor="@color/grayScale5" />
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="(2019-08-30)"
+                    android:gravity="center"
+                    android:textColor="@color/grayScale5" />
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayScale4" />
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Conversão Realizada"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/grayScale5" />
+            <TextView
+                    android:id="@+id/conversionValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="2 USD → 8.32 BRL"
+                    android:gravity="center"
+                    android:textColor="@color/grayScale5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

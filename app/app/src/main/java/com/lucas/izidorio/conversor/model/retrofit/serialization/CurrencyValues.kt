@@ -1,6 +1,10 @@
-package com.lucas.izidorio.conversor.model.retrofit
+package com.lucas.izidorio.conversor.model.retrofit.serialization
 
+import android.content.Context
+import android.widget.ArrayAdapter
 import com.google.gson.annotations.SerializedName
+import com.lucas.izidorio.conversor.R
+import java.util.*
 
 data class CurrencyValues(
     @SerializedName("CAD")
@@ -141,4 +145,20 @@ data class CurrencyValues(
             else -> null
         }
     }
+
+    fun getRateValue(context: Context): Currency? {
+        val list = context.resources.getStringArray(R.array.currency_list)
+        for (currency in list) {
+            val currencyValue = getCurrencyValue(currency)
+            if (currencyValue == null) {
+                continue
+            } else {
+                return Currency(currency, currencyValue)
+            }
+        }
+
+        return null
+    }
+
+    class Currency(val name: String, val value: Double)
 }
